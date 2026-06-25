@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens - Integrantes</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #faf8f5;
+            color: #333;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* BOTÃO VOLTAR */
+        .btn-voltar {
+            display: inline-block;
+            background-color: #004d33;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-voltar:hover {
+            background-color: #00b074;
+        }
+
+        .section-integrantes {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+            border-left: 6px solid #00b074;
+        }
+
+        .section-title {
+            color: #004d33;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+
+        .group-title {
+            color: #00b074;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 25px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* GRID */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .member-card {
+            background: #faf8f5;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #eef2f0;
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .member-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+            border: 3px solid #004d33;
+            background-color: #e0e0e0;
+        }
+
+        .member-card.prof .member-img {
+            border-color: #00b074;
+        }
+
+        .member-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .member-role {
+            font-size: 11px;
+            color: #666;
+            margin-top: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+    <a href="index.html" class="btn-voltar">← Voltar ao Início</a>
+
+    <div class="container">
+
+        <div class="section-integrantes">
+
+            <h1 class="section-title">Integrantes</h1>
+            <p class="section-subtitle">Prática Profissional Integrada — Equipe de Desenvolvimento e Mentoria</p>
+
+            <div class="group-title">Alunos (6)</div>
+            <div class="team-grid">
+
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" class="member-img">
+                    <div class="member-name">Bruno Emanoel Jesus Dos Santos</div>
+                    <div class="member-role">Aluno</div>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" class="member-img">
+                    <div class="member-name">Davi Filipe Barbosa Gomes Da Silva</div>
+                    <div class="member-role">Aluno</div>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" class="member-img">
+                    <div class="member-name">Davi Miguel Costa Debesa</div>
+                    <div class="member-role">Aluno</div>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" class="member-img">
+                    <div class="member-name">Lucas Israel Ferreira Mendes Da Silva</div>
+                    <div class="member-role">Aluno</div>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" class="member-img">
+                    <div class="member-name">Lyls Gustavo Naldo De Oliveira Araújo</div>
+                    <div class="member-role">Aluno</div>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/150" class="member-img">
+                    <div class="member-name">Pablo Henrique Arruda Lima</div>
+                    <div class="member-role">Aluno</div>
+                </div>
+
+            </div>
+
+            <div class="group-title">Professores (5)</div>
+            <div class="team-grid">
+
+                <div class="member-card prof">
+                    <img src="https://suap.ifmt.edu.br/media/fotos/75x100/2888.fHRXKHblrg9f.jpg" class="member-img">
+                    <div class="member-name">Carlos Gracioli Neto</div>
+                    <div class="member-role">Professor</div>
+                </div>
+
+                <div class="member-card prof">
+                    <img src="https://suap.ifmt.edu.br/media/fotos/75x100/3064.2VsBxudoyDVA.jpg" class="member-img">
+                    <div class="member-name">Denilson Botelho da Cruz</div>
+                    <div class="member-role">Professor</div>
+                </div>
+
+                <div class="member-card prof">
+                    <img src="https://suap.ifmt.edu.br/media/fotos/75x100/25702.8i3sD_BBkkV2.jpg" class="member-img">
+                    <div class="member-name">Lourivani Bastos</div>
+                    <div class="member-role">Professora</div>
+                </div>
+
+                <div class="member-card prof">
+                    <img src="https://suap.ifmt.edu.br/media/fotos/75x100/3686.Qq_odyqr9-Ju.jpg" class="member-img">
+                    <div class="member-name">Luiz Carlos da Fonseca Lage</div>
+                    <div class="member-role">Professor</div>
+                </div>
+
+                <div class="member-card prof">
+                    <img src="https://suap.ifmt.edu.br/media/fotos/75x100/220452.SAyhtHazagl4.jpg" class="member-img">
+                    <div class="member-name">Victor Felix Arinos</div>
+                    <div class="member-role">Professor</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

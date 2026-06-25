@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens - Início</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #faf8f5;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header-tag {
+            background-color: #004d33;
+            color: white;
+            padding: 6px 16px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            color: #004d33;
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: #00b074;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+
+        .cards-grid {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card-item {
+            flex: 1;
+            min-width: 280px;
+            max-width: 360px;
+            background: white;
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 77, 51, 0.05);
+            border: 1px solid rgba(0, 77, 51, 0.08);
+            border-top: 6px solid #004d33;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease;
+            text-decoration: none; /* Remove o sublinhado do link */
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .card-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 176, 116, 0.15);
+            border-top-color: #00b074;
+        }
+
+        .card-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .card-title {
+            font-size: 22px;
+            color: #004d33;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .card-item:hover .card-title {
+            color: #00b074;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-tag">Prática Profissional Integrada</div>
+        <h1>LINGUAGENS</h1>
+        <div class="subtitle">Comunicação Humana & Lógica Técnica</div>
+
+        <div class="cards-grid">
+            <a href="bioai.html" class="card-item">
+                <div class="card-icon">🤖</div>
+                <div class="card-title">BioAI</div>
+                <div class="card-desc">Espaço estruturado para o desenvolvimento e apresentação do nosso projeto.</div>
+            </a>
+
+            <a href="linguagem.html" class="card-item">
+                <div class="card-icon">💻</div>
+                <div class="card-title">Linguagem</div>
+                <div class="card-desc">Acesso direto ao código-fonte e fluxos de lógica desenvolvidos.</div>
+            </a>
+
+            <a href="integrantes.html" class="card-item">
+                <div class="card-icon">👥</div>
+                <div class="card-title">Integrantes</div>
+                <div class="card-desc">Clique para visualizar a lista dedicada de alunos e professores com fotos.</div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
